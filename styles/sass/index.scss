@@ -11,6 +11,8 @@ body {
 .container {
     @include center;
     flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
 }
 
 // about
@@ -34,14 +36,16 @@ body {
     text-align: center;
     @include center;
     font-size: 40px;
-    z-index: 2;
 }
 .about-cont {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.about {
+    height: 70vh;
+    margin-top: 200px;
+}
 .about-header {
     font-size: 35px;
 }
@@ -51,23 +55,35 @@ body {
     justify-content: space-around;
 }
 .about-me-2 {
-    @include center;
+    margin-top: 200px;
     width: 1200px;
+    display: flex;
     justify-content: space-between;
 }
 .about-photo {
-    width: 300px;
+    width: 350px;
     height: 500px;
+    background-image: url('/assets/images/denis2.png');
+    border-radius: 15px;
+    background-size: cover;
 }
-.about2-photo {
-    width: 300px;
-    height: 500px;
-}
-.about-about {
+.about1-about {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
     width: 400px;
-    height: 500px;
+    height: 200px;
 }
-.about-text {
+.about2-about {
+    width: 400px;
+    height: 700px;
+}
+.about1-text {
+    text-align: end;
+    font-size: 23px;
+}
+.about2-text {
     font-size: 23px;
 }
 li {
@@ -107,23 +123,71 @@ li {
 
 /* projects */
 
-.projects {
-    margin-top: 100px;
-}
-
 .running-cat {
     display: flex;
     justify-content: center;
-}
-.running-cat iframe{
-    margin-bottom: 50px;
-    margin-right: 50px;
-    border-radius: 20px;
-    width: 800px;
-    height: 600px;
+    iframe{
+        margin-bottom: 50px;
+        margin-right: 50px;
+        border-radius: 20px;
+        width: 800px;
+        height: 600px;
+    }
 }
 .catdesc {
     margin-top: 50px;
     font-size: 30px;
     width: 25vw;
+}
+
+@media screen and (max-width: 500px){
+    .about-me-1 {
+        width: 100vw;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        padding-right: 20px;
+    }
+    .about-me-2 {
+        width: 100vw;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .time {
+        width: 400px;
+        height: 400px;
+    }
+    .running-cat {
+        flex-wrap: wrap;
+    }
+    .running-cat iframe{
+        width: 100vw;
+        margin: 0;
+    }
+    .catdesc {
+        font-size: 20px;
+        width: 100vw;
+        margin: 30px 20px 20px 20px;
+    }
+    .who-i-am {
+        width: 300px;
+        font-size: 25px;
+    }
+    .link-github {
+        font-size: 25px;
+    }
+    .uil.uil-github-alt {
+        font-size: 40px;
+    }
+    .about {
+        margin-top: 100px;
+    }
+    .about-header {
+        font-size: 30px;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+    .legends {
+        display: none;
+    }
 }
