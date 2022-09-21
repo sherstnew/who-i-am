@@ -1,0 +1,11 @@
+$text-col: #DDDDDD;
+$ff: 'Montserrat', sans-serif;
+a {
+    color: #DDDDDD;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

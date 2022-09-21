@@ -1,0 +1,129 @@
+@import 'reset';
+@import 'mixins';
+
+body {
+    background-color: #222831;
+    overflow-x: hidden;
+    user-select: none;
+    font-family: $ff;
+    color: $text-col;
+}
+.container {
+    @include center;
+    flex-wrap: wrap;
+}
+
+// about
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+    margin-top: 300px;
+}
+.background-cup {
+    opacity: 0.5;
+    width: 500px;
+    height: 500px;
+    @include center;
+}
+.who-i-am {
+    width: 1300px;
+    text-align: center;
+    @include center;
+    font-size: 40px;
+    z-index: 2;
+}
+.about-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-header {
+    font-size: 35px;
+}
+.about-me-1 {
+    @include center;
+    width: 1200px;
+    justify-content: space-around;
+}
+.about-me-2 {
+    @include center;
+    width: 1200px;
+    justify-content: space-between;
+}
+.about-photo {
+    width: 300px;
+    height: 500px;
+}
+.about2-photo {
+    width: 300px;
+    height: 500px;
+}
+.about-about {
+    width: 400px;
+    height: 500px;
+}
+.about-text {
+    font-size: 23px;
+}
+li {
+    margin: 20px 0px 0px 10px;
+}
+.time {
+    @include center;
+    width: 700px;
+    height: 700px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: end;
+}
+
+.link-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.uil.uil-github-alt {
+    margin-right: 20px;
+    transition: 0.5s;
+    font-size: 50px;
+    color: $text-col;
+    &:hover {
+        transition: 0.5s;
+        text-shadow: 0px 0px 20px $text-col;
+    }
+}
+
+
+/* projects */
+
+.projects {
+    margin-top: 100px;
+}
+
+.running-cat {
+    display: flex;
+    justify-content: center;
+}
+.running-cat iframe{
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    width: 800px;
+    height: 600px;
+}
+.catdesc {
+    margin-top: 50px;
+    font-size: 30px;
+    width: 25vw;
+}

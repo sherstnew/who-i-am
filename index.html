@@ -4,32 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/css/index.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>What is it?</title>
+    <script src="https://unpkg.com/@splinetool/runtime@0.9.61/build/runtime.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Hey, its me!</title>
 </head>
 <body>
-<div class="whoiam">
-    <a href="https://github.com/sherstnew"><i class="uil uil-github-alt"></i></a>
-    <div class="name">sherstnew</div>
-    <canvas class="background"></canvas>
-    <span class="wia">
-        Кто я?
-        <br>
-        Обычный фронтендер,
-        <br>
-        делающий все что угодно
-    </span>
-    <span class="pls">работай пожалуйста</span>
-</div>
-
-<div class="projects">
-    <span class="myproj">Мои творения:</span>
-    <div class="running-cat">
-        <iframe src="https://running-cat.netlify.app" frameborder="0"></iframe>
-        <div class="catdesc">Самый, на мой взгляд, крутой проект из всех. Простенькая игра, где от тебя убегает кот с парой пасхалок. Кстати, ты можешь попробовать поиграть в неё прямо тут)</div>
+<div class="container">
+    <div class="about-header">
+        <a href="https://github.com/sherstnew" class="link-github">
+                <i class="uil uil-github-alt"></i>
+                <div class="github-name">sherstnew</div>
+        </a>
+    </div>
+    <div class="about-cont">
+        <div class="about">
+            <div class="who-i-am">
+                Кто я? Обычный фронтендер, делающий все что угодно
+            </div>
+            <canvas class="background-cup"></canvas>
+        </div>
+        <div class="about-me-1">
+            <div class="about-photo"></div>
+            <div class="about-about"><span class="about-header">Hello world!</span><br><br>
+                <span class="about-text">Меня зовут Денис, мне 14 и я занимаюсь разработкой сайтов с 2021 года.</span>
+            </div>
+        </div>
+        <div class="about-me-2">
+            <div class="about-about">
+                <span class="about-header">Что я знаю и на чем работаю:</span><br><br>
+                <span class="about-text">
+                    <ul>
+                        Frontend:
+                        <li><i class="devicon-html5-plain colored"></i></i> HTML</li>
+                        <li><i class="devicon-css3-plain colored"></i></i> CSS</li> 
+                        <li><i class="devicon-javascript-plain colored"></i></i> JS</li>
+                        <br>
+                        Backend:
+                        <li><i class="devicon-nodejs-plain colored"></i> Node JS<br></li>
+                        <li><i class="devicon-python-plain colored"></i> Python<br></li>
+                        <br>
+                        Other:
+                        <li><i class="devicon-sass-original colored"></i> Sass</li>
+                        <li><i class="devicon-git-plain colored"></i> Git</li>
+                    </ul>
+                </span>
+            </div>
+            <figure class="time"><embed src="https://wakatime.com/share/@sherstd/e48af5d9-0cc2-44a6-8ef6-e987ab18d52b.svg"></embed></figure>
+        </div>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="running-cat">
+            <iframe src="https://running-cat.netlify.app" frameborder="0"></iframe>
+            <div class="catdesc">Самый, на мой взгляд, крутой проект из всех. Простенькая игра, где от тебя убегает кот с парой пасхалок. Кстати, ты можешь попробовать поиграть в неё прямо тут или на <a href="https://running-cat.netlify.app" target="_blank" rel="noopener noreferrer">демо-сайте</a>)</div>
+        </div>
     </div>
 </div>
+<script src="/scripts/index.js" type="module"></script>
 </body>
 </html>
