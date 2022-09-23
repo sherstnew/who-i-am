@@ -1,4 +1,6 @@
-![](https://sherstnew.ml/assets/images/glass.svg)
+
+------------
+
 # [who-i-am](https://sherstnew.ml "who-i-am") 
 #### by sherstnew with ❤
 
