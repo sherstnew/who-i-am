@@ -1,0 +1,84 @@
+
+// about container
+
+// cup
+
+.about-cup {
+    @include center;
+    width: $aw;
+    height: $ah - 30vh;
+    @include marg (200px , 0px);
+}
+.background-cup {
+    opacity: 0.5;
+    width: 500px;
+    height: 500px;
+    @include center;
+}
+.who-i-am {
+    width: $aw;
+    text-align: center;
+    @include center;
+    font-size: $hfs;
+}
+.about-container {
+    @include center;
+}
+.about-header {
+    font-size: $hfs;
+}
+.about-me {
+    @include center;
+    width: $aw - 10vw;
+    justify-content: $sa;
+    text-align: end;
+    .about-about {
+        @include center;
+        width: 400px;
+        height: 200px;
+    }
+}
+.about-languages {
+    @include marg (200px , 0px);
+    width: $aw - 10vw;
+    display: flex;
+    justify-content: $sa;
+    flex-wrap: wrap;
+    .about-about {
+        width: 400px;
+        height: 700px;
+    }
+}
+.about-photo {
+    width: 350px;
+    height: 500px;
+    background-image: url('/assets/images/denis2.png');
+    border-radius: 10px 15px 10px 15px;
+    background-size: cover;
+}
+
+.about-text {
+    font-size: $tfs;
+    ul {
+        li {
+            margin: 20px 0px 0px 10px;
+        }
+    }
+}
+
+// statistic
+
+.stat {
+    @include center;
+    width: 600px;
+}
+.stat-stat {
+    @include center;
+    width: 600px;
+    height: 600px;
+}
+.stat-text {
+    width: 300px;
+    font-size: $mfs;
+    text-align: center;
+}

@@ -1,5 +1,13 @@
 $text-col: #DDDDDD;
 $ff: 'Montserrat', sans-serif;
+$aw: 100vw;
+$ah: 100vh;
+$hfs: 35px; //header
+$mfs: 30px; //middle-header
+$tfs: 25px; //text
+$sfs: 20px; //small-text
+$sa: space-around;
+
 a {
     color: #DDDDDD;
 }
@@ -9,4 +17,8 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@mixin marg ($mt, $ml) {
+    margin: $mt 0px 0px $ml;
 }

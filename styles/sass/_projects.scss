@@ -1,0 +1,18 @@
+
+// projects
+
+.running-cat {
+    @include center;
+    justify-content: $sa;
+    width: $aw;
+    iframe{
+        border-radius: 20px;
+        width: 800px;
+        height: 600px;
+    }
+}
+.catdesc {
+    margin-top: 50px;
+    font-size: $tfs;
+    width: 500px;
+}

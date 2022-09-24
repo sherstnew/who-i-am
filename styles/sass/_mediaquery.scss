@@ -1,0 +1,73 @@
+@media screen and (max-width: 500px){
+    * {
+        flex-wrap: wrap;
+    }
+
+    // github link
+
+    .link-github {
+        font-size: $tfs;
+    }
+    .uil.uil-github-alt {
+        font-size: 40px;
+    }
+
+    // cup and whoiam
+
+    .about-cup {
+        width: $aw;
+        @include marg(100px, 0px);
+    }
+    .who-i-am {
+        width: 300px;
+        font-size: $tfs;
+    }
+    .background-cup {
+        width: $aw;
+    }
+
+    // about-container
+
+    .about-me {
+        width: $aw;
+        @include marg(100px, 0px);
+    }
+    .about-languages {
+        width: $aw;
+        .about-about {
+            height: 600px;
+        }
+    }
+    .about-header {
+        text-align: center;
+    }
+    .about-text {
+        text-align: center;
+        font-size: $sfs;
+    }
+
+    // statistic
+
+    .stat {
+        width: $aw;
+    }
+    .stat-stat {
+        height: 400px;
+    }
+    .stat-text {
+        font-size: $sfs;
+        width: $aw / 2;
+    }
+
+    // projects
+
+    .running-cat iframe{
+        width: $aw;
+        margin: 0;
+    }
+    .catdesc {
+        font-size: $sfs;
+        width: $aw - 10vw;
+        margin: 30px 20px 20px 20px;
+    }
+}
